@@ -1,7 +1,7 @@
 {
   "name": "branch-cleaner",
   "version": "1.0.0",
-  "description": "",
+  "description": "delete all local branch expect the master.",
   "bin" : {
     "branch-cleaner" : "branch-cleaner"
   },
