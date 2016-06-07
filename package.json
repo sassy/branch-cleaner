@@ -1,9 +1,9 @@
 {
   "name": "branch-cleaner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "delete all local branch expect the master.",
   "bin" : {
-    "branch-cleaner" : "branch-cleaner"
+    "branch-cleaner" : "bin/branch-cleaner"
   },
   "main": "main.js",
   "scripts": {
