@@ -5,6 +5,7 @@ delete all local branches except the master.
 ## Usage
 
 ```
+$ npm install -g branch-cleaner
 $ branch-cleaner (direcotry_of_repository)
 ```
 
