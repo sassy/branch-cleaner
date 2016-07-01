@@ -1,6 +1,6 @@
 # branch-cleaner
 
-delete all local branch expect the master.
+delete all local branches except the master.
 
 ## Usage
 
