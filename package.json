@@ -13,6 +13,6 @@
   "license": "MIT",
   "dependencies": {
     "nodegit": "^0.13.0",
-    "yargs": "^4.7.1"
+    "yargs": "^15.0.0"
   }
 }
