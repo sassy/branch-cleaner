@@ -1,23 +1,29 @@
-var Git = require('nodegit');
-var yargs = require('yargs');
+const Git = require('nodegit');
+const yargs = require('yargs');
+const path = require('path');
 
-var argv = yargs.argv;
-var path = (argv._[0]);
+const argv = yargs.argv;
+const pathName = path.resolve(__dirname, argv._[0]);
 
 module.exports.exec = function() {
-  Git.Repository.open(path)
-  .then(function(repo){
-    console.log(repo);
-    return repo.getReferences(Git.Reference.TYPE.OID);
+  let repo;
+  Git.Repository.open(pathName)
+  .then((repository) => {
+    console.log(repository);
+    repo = repository
+    return repo.getReferenceNames(Git.Reference.TYPE.ALL);
   })
-  .then(function(refs) {
+  .then((refs) => {
     refs.forEach(function(ref) {
-      if (!ref.isRemote() && ref.isBranch()) {
-        if (!ref.name().match(/master$/)) {
-          ref.delete();
-          console.log('delete' + ref.name())
-        }
-      }
+      repo.getBranch(ref)
+        .then((branch) => {
+          if (!branch.isRemote() && branch.isBranch()) {
+            if (!branch.name().match(/master$/)) {
+              branch.delete();
+              console.log('delete ' + branch.name())
+            }
+          }
+        });
     });
   });
 };
