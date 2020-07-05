@@ -2,17 +2,21 @@
   "name": "branch-cleaner",
   "version": "1.0.1",
   "description": "delete all local branch expect the master.",
-  "bin" : {
-    "branch-cleaner" : "bin/branch-cleaner"
+  "bin": {
+    "branch-cleaner": "bin/branch-cleaner"
   },
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Satoshi Watanabe",
   "license": "MIT",
   "dependencies": {
-    "nodegit": "^0.13.0",
-    "yargs": "^15.0.0"
-  }
+    "nodegit": "^0.26.3",
+    "yargs": "^15.0.0",
+    "snyk": "^1.360.0"
+  },
+  "snyk": true
 }
