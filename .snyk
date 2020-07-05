@@ -20,3 +20,8 @@ patch:
         patched: '2020-07-05T07:30:21.491Z'
     - nodegit > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
         patched: '2020-07-05T07:30:21.491Z'
+  SNYK-JS-LODASH-567746:
+    - nodegit > lodash:
+        patched: '2020-07-05T09:12:29.135Z'
+    - nodegit > request-promise-native > request-promise-core > lodash:
+        patched: '2020-07-05T09:12:29.135Z'
