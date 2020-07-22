@@ -14,9 +14,10 @@
   "author": "Satoshi Watanabe",
   "license": "MIT",
   "dependencies": {
+    "node-pre-gyp": "^0.15.0",
     "nodegit": "^0.26.3",
-    "yargs": "^15.0.0",
-    "snyk": "^1.360.0"
+    "snyk": "^1.360.0",
+    "yargs": "^15.0.0"
   },
   "snyk": true
 }
