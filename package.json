@@ -16,7 +16,7 @@
   "dependencies": {
     "node-pre-gyp": "^0.15.0",
     "nodegit": "^0.27.0",
-    "snyk": "^1.366.0",
+    "snyk": "^1.366.2",
     "yargs": "^15.0.0"
   },
   "snyk": true
