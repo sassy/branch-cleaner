@@ -17,7 +17,7 @@
     "node-pre-gyp": "^0.15.0",
     "nodegit": "^0.27.0",
     "snyk": "^1.369.2",
-    "yargs": "^15.0.0"
+    "yargs": "^16.0.0"
   },
   "snyk": true
 }
