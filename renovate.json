@@ -2,5 +2,11 @@
   "extends": [
     "config:base",
     ":automergeMinor"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
   ]
 }
