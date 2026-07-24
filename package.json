@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "@figma/nodegit": "^0.28.0-figma.4",
-    "@mapbox/node-pre-gyp": "^1.0.11",
+    "@mapbox/node-pre-gyp": "^2.0.0",
     "@snyk/protect": "^1.1277.0",
     "snyk": "^1.1212.0",
     "yargs": "^17.0.0"
